@@ -2,8 +2,8 @@ module.exports = function ProfileGen(userInfo) {
 
     this.name = userInfo.name;
     this.gitHubURL = userInfo.html_url;
-    this.color = userInfo.color;
     this.img = userInfo.avatar_url;
+    this.color = userInfo.color;
     this.bio = userInfo.bio;
     this.blog = userInfo.blog;
     this.location = userInfo.location;
@@ -76,9 +76,9 @@ module.exports = function ProfileGen(userInfo) {
            font-family: 'Raleway', sans-serif, Helvetica;
            }
            main {
-           background-color: #E9EDEE;
+           background-color: gainsboro;
            height: auto;
-           padding-top: 30px;
+           padding-top: 10px;
            }
            h1, h2, h3, h4, h5, h6 {
            font-family: 'Raleway', sans-serif, Helvetica;
@@ -105,7 +105,7 @@ module.exports = function ProfileGen(userInfo) {
            .photo-header {
            position: relative;
            margin: 0 auto;
-           margin-bottom: -50px;
+           margin-bottom: 20px;
            display: flex;
            justify-content: center;
            flex-wrap: wrap;
@@ -121,8 +121,7 @@ module.exports = function ProfileGen(userInfo) {
            border-radius: 50%;
            object-fit: cover;
            margin-top: -75px;
-           border: 6px solid ${this.colors[this.color].photoBorderColor};
-           box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
+           border: 4px solid ${this.colors[this.color].photoBorderColor};
            }
            .photo-header h1, .photo-header h2 {
            width: 100%;
@@ -148,7 +147,7 @@ module.exports = function ProfileGen(userInfo) {
            margin-top: 10px;
            }
            .container {
-           padding: 50px;
+           padding: 30px;
            padding-left: 100px;
            padding-right: 100px;
            }
@@ -162,11 +161,11 @@ module.exports = function ProfileGen(userInfo) {
            }
   
            .card {
-             padding: 20px;
-             border-radius: 6px;
+             padding: 10px;
+             border-radius: 12px;
              background-color: ${this.colors[this.color].headerBackground};
              color: ${this.colors[this.color].headerColor};
-             margin: 20px;
+             margin: 10px;
            }
            
            .col {
