@@ -1,3 +1,5 @@
+// Developer Profile Generator
+
 const inquirer = require('inquirer');
 const axios = require('axios');
 
@@ -19,7 +21,6 @@ module.exports = function User() {
                         type: "input",
                         message: "What is your favorite color (green, blue, pink, red?) ",
                         name: "color"
-                        //choices: ['green', 'blue', 'pink', 'red']
                     }
                 ]);
 
@@ -43,4 +44,3 @@ module.exports = function User() {
         return this.userDetails;
     }
 }
-

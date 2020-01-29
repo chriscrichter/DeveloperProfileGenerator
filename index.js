@@ -1,14 +1,14 @@
+// Developer Profile Generator
+
 const fs = require('fs');
-const http = require('http');
 const inquirer = require('inquirer');
 const axios = require('axios');
+const http = require('http');
 const puppeteer = require('puppeteer');
 const User = require('./user-input');
 const profileGen = require('./profile-gen');
 
-
 function App() {
-
     this.writeFileAsync = async function (fileDir, content) {
         return new Promise((resolve, reject) => {
             fs.writeFile(fileDir, content, err => {

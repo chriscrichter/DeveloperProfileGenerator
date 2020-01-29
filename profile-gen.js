@@ -1,3 +1,5 @@
+// Developer Profile Generator
+
 module.exports = function ProfileGen(userInfo) {
 
     this.name = userInfo.name;
@@ -18,27 +20,24 @@ module.exports = function ProfileGen(userInfo) {
             headerBackground: "darkgreen",
             wrapperBackground: "green",
             headerColor: "white",
-            photoBorderColor: "yellow"
         },
         blue: {            
             headerBackground: "darkblue",
             wrapperBackground: "blue",
             headerColor: "white",
-            photoBorderColor: "purple"
         },
         pink: {            
             wrapperBackground: "pink",
             headerBackground: "deeppink",
             headerColor: "white",
-            photoBorderColor: "purple"
         },
         red: {            
             headerBackground: "darkred",
             wrapperBackground: "red",
             headerColor: "white",
-            photoBorderColor: "white"
         }
     };
+    
     this.html = `<!DOCTYPE html>
   <html lang="en">
      <head>
@@ -48,7 +47,6 @@ module.exports = function ProfileGen(userInfo) {
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
         <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/7053e21479.js" crossorigin="anonymous"></script>
         <title>Document</title>
         <style>
            html, body {
@@ -83,27 +81,27 @@ module.exports = function ProfileGen(userInfo) {
            }
            
            h1 {
-           font-size: 3em;
+           font-size: 36px;
            }
            
            h2 {
-           font-size: 2.5em;
+           font-size: 32px;
            }
            
            h3 {
-           font-size: 2em;
+           font-size: 28px;
            }
            
            h4 {
-           font-size: 1.5em;
+           font-size: 24px;
            }
            
            h5 {
-           font-size: 1.3em;
+           font-size: 20px;
            }
            
            h6 {
-           font-size: 1.2em;
+           font-size: 18px;
            }
            
            .photo-header {
@@ -117,7 +115,6 @@ module.exports = function ProfileGen(userInfo) {
            color: ${this.colors[this.color].headerColor};
            padding: 10px;
            width: 85%;
-           border-radius: 6px;
            }
            
            .photo-header img {
@@ -126,7 +123,6 @@ module.exports = function ProfileGen(userInfo) {
            border-radius: 50%;
            object-fit: cover;
            margin-top: -75px;
-           border: 4px solid ${this.colors[this.color].photoBorderColor};
            }
            
            .photo-header h1, .photo-header h2 {
@@ -142,19 +138,12 @@ module.exports = function ProfileGen(userInfo) {
            width: 100%;
            text-align: center;
            padding: 20px 0;
-           font-size: 1.1em;
+           font-size: 18px;
            }
            
            .nav-link {
            display: inline-block;
            margin: 5px 10px;
-           }
-           
-           .workExp-date {
-           font-style: italic;
-           font-size: .7em;
-           text-align: right;
-           margin-top: 10px;
            }
            
            .container {
@@ -173,7 +162,6 @@ module.exports = function ProfileGen(userInfo) {
   
            .card {
            padding: 10px;
-           border-radius: 12px;
            background-color: ${this.colors[this.color].headerBackground};
            color: ${this.colors[this.color].headerColor};
            margin: 10px;
@@ -201,8 +189,8 @@ module.exports = function ProfileGen(userInfo) {
         <div class="wrapper">
            <div class="photo-header">
                 <img src="${this.img}" alt="Developer Profile Image">
-                <h1>Hi !</h1>
-                <h2>My name is ${this.name} !</h2>
+                <h1>Hello !</h1>
+                <h2>My name is ${this.name}</h2>
                 <h4>Currently @ ${this.company}</h4>
                 <ul class="links-nav">
                     <li class="nav-link"><a href="http://maps.google.com/?q=${this.location}"><i class="fas fa-location-arrow"></i> ${this.location}</a></li>
