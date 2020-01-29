@@ -25,11 +25,11 @@ The PDF is populated with the following from GitHub:
 
 ## Built Using
 
-GitHub API
-Node.js - JavaScript runtime
-Inquirer - Interactive command line interface (CLI)
-Axios - JavaScript library used to perform HTTP requests
-Puppeteer - Converts HTML to PDF file
+* GitHub API
+* Node.js - JavaScript runtime
+* Inquirer - Interactive command line interface (CLI)
+* Axios - JavaScript library used to perform HTTP requests
+* Puppeteer - Converts HTML to PDF file
 
 ## Business Context
 
