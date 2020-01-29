@@ -19,6 +19,8 @@ The PDF is populated with the following from GitHub:
 * Number of GitHub stars
 * Number of users following
 
+## Demonstration
+
 ![Demo](https://raw.githubusercontent.com/chriscrichter/DeveloperProfileGenerator/master/assets/DeveloperProfileGenerator.gif)
 
 ## Built Using
