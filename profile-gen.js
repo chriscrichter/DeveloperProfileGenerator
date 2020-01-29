@@ -51,57 +51,61 @@ module.exports = function ProfileGen(userInfo) {
         <script src="https://kit.fontawesome.com/7053e21479.js" crossorigin="anonymous"></script>
         <title>Document</title>
         <style>
-            @page {
-              margin: 0;
-            }
-           *,
-           *::after,
-           *::before {
-           box-sizing: border-box;
-           }
            html, body {
            padding: 0;
            margin: 0;
            }
+           
            html, body, .wrapper {
            height: 100%;
            }
+           
            .wrapper {
            background-color: ${this.colors[this.color].wrapperBackground};
            padding-top: 100px;
            }
+           
            body {
            background-color: white;
            -webkit-print-color-adjust: exact !important;
            font-family: 'Raleway', sans-serif, Helvetica;
            }
+           
            main {
            background-color: gainsboro;
            height: auto;
            padding-top: 10px;
            }
+           
            h1, h2, h3, h4, h5, h6 {
            font-family: 'Raleway', sans-serif, Helvetica;
            margin: 0;
            }
+           
            h1 {
            font-size: 3em;
            }
+           
            h2 {
            font-size: 2.5em;
            }
+           
            h3 {
            font-size: 2em;
            }
+           
            h4 {
            font-size: 1.5em;
            }
+           
            h5 {
            font-size: 1.3em;
            }
+           
            h6 {
            font-size: 1.2em;
            }
+           
            .photo-header {
            position: relative;
            margin: 0 auto;
@@ -112,9 +116,10 @@ module.exports = function ProfileGen(userInfo) {
            background-color: ${this.colors[this.color].headerBackground};
            color: ${this.colors[this.color].headerColor};
            padding: 10px;
-           width: 95%;
+           width: 85%;
            border-radius: 6px;
            }
+           
            .photo-header img {
            width: 250px;
            height: 250px;
@@ -123,29 +128,35 @@ module.exports = function ProfileGen(userInfo) {
            margin-top: -75px;
            border: 4px solid ${this.colors[this.color].photoBorderColor};
            }
+           
            .photo-header h1, .photo-header h2 {
            width: 100%;
            text-align: center;
            }
+           
            .photo-header h1 {
            margin-top: 10px;
            }
+           
            .links-nav {
            width: 100%;
            text-align: center;
            padding: 20px 0;
            font-size: 1.1em;
            }
+           
            .nav-link {
            display: inline-block;
            margin: 5px 10px;
            }
+           
            .workExp-date {
            font-style: italic;
            font-size: .7em;
            text-align: right;
            margin-top: 10px;
            }
+           
            .container {
            padding: 30px;
            padding-left: 100px;
@@ -153,19 +164,19 @@ module.exports = function ProfileGen(userInfo) {
            }
   
            .row {
-             display: flex;
-             flex-wrap: wrap;
-             justify-content: space-between;
-             margin-top: 20px;
-             margin-bottom: 20px;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           margin-top: 20px;
+           margin-bottom: 20px;
            }
   
            .card {
-             padding: 10px;
-             border-radius: 12px;
-             background-color: ${this.colors[this.color].headerBackground};
-             color: ${this.colors[this.color].headerColor};
-             margin: 10px;
+           padding: 10px;
+           border-radius: 12px;
+           background-color: ${this.colors[this.color].headerBackground};
+           color: ${this.colors[this.color].headerColor};
+           margin: 10px;
            }
            
            .col {
@@ -231,5 +242,4 @@ module.exports = function ProfileGen(userInfo) {
     </div>
 </body>
 </html>`;
-
 }
